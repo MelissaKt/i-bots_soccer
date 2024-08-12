@@ -1,2 +1,2 @@
 # i-bots_soccer
-The official i-bots Soccer 2vs2 open mainpage
+The official i-bots soccer 2vs2 open mainpage
