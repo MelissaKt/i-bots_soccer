@@ -2,6 +2,7 @@
 
 LD19 lidar;
 
+//-------------
 int lidar_x_max = 0;
 int lidar_x_min = 0;
 int lidar_y_max = 0;
@@ -16,7 +17,7 @@ int feldx = 1820;
 int feldy = 2430;
 int botx = 0;
 int boty = 0;
-
+//-----------
 
 void setup() {
   Serial.begin(115200);
@@ -26,8 +27,6 @@ void setup() {
 void loop() {
   lidar_auslesen();
 }
-
-
 
 
 void lidar_auslesen() {
@@ -53,7 +52,7 @@ void lidar_auslesen() {
     lidar_feldx = 0;
   }
   if (lidar_feldy < feldy - lidar_differenz || lidar_feldy > feldy + lidar_differenz) {
-    lidar_feldy = 0;  // 0 bedeutet hier ein Fehlerwert
+    lidar_feldy = 0;  
   }
 
   botx = lidar_x_min * (-1);
